@@ -3,14 +3,19 @@ import pygame
 pygame.init()
 
 pygame.display.set_caption("RoadBreaker")
-pygame.display.set_mode((1920,1080))
+screen = pygame.display.set_mode((1344,756))
 
+background = pygame.image.load('Assets/Images/Fond_Jour.png')
 
 isRunning = True
 
 while isRunning :
 
     #
+    screen.blit(background,(0,0))
+
+    pygame.display.flip
+
     for event in pygame.event.get():
     
         if event.type == pygame.QUIT:
