@@ -1,8 +1,20 @@
 import pygame
 
+pygame.init()
 
-y = 0 
+pygame.display.set_caption("RoadBreaker")
+pygame.display.set_mode((1920,1080))
 
-y = int( input("Entre Y "))
 
-print("Y vaut ",y)
+isRunning = True
+
+while isRunning :
+
+    #
+    for event in pygame.event.get():
+    
+        if event.type == pygame.QUIT:
+            isRunning == False
+            pygame.quit()
+            print("Fermeture")
+    
