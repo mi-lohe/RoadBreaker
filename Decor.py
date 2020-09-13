@@ -4,7 +4,7 @@ class Route(pygame.sprite.Sprite):
 
     def __init__(self,Jeu):
         super().__init__()
-        self.Vitesse = 10
+        self.Vitesse = 5
         self.Jeu = Jeu
         self.image = pygame.image.load('Assets/Sprites/Route/Route0.png')
         self.rect = self.image.get_rect()
@@ -14,5 +14,5 @@ class Route(pygame.sprite.Sprite):
     def defile(self):
         self.rect.x -= self.Vitesse
         
-        if self.rect.x < -200:
+        if self.rect.x < -self.rect.width:
             self.Jeu.TouteRoute.remove(self)
