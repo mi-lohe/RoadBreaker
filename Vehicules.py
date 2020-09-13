@@ -11,7 +11,7 @@ class Camion(pygame.sprite.Sprite):
         self.image = pygame.image.load('Assets/Sprites/CamionClean.png')
         self.rect = self.image.get_rect()
         self.rect.x = 200
-        self.rect.y = 420
+        self.rect.y = 420 
 
     def Accelere(self):
         self.rect.x += self.Velocite

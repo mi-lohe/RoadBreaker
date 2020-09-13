@@ -14,9 +14,18 @@ jeu = Jeu()
 
 isRunning = True #Initalisation de la condition de boucle principale
 
+compteurR=0
+
+
 while isRunning :    #boucle principale
    
     screen.blit(background, (0, 0)) #Ajout de l'image de fond sur la surface. 
+    
+    if compteurR > 318:
+        jeu.LaunchRoute()
+        compteurR = 0    
+    compteurR += 5
+    print(compteurR)
     
     jeu.TouteRoute.draw(screen)
     
