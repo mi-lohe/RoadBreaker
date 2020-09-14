@@ -25,7 +25,8 @@ while isRunning :    #boucle principale
         jeu.LaunchRoute()
         compteurR = 0    
     compteurR += 5
-    print(compteurR)
+    
+    print(jeu.Joueur.Santee)
     
     jeu.TouteRoute.draw(screen)
     
